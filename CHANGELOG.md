@@ -527,6 +527,15 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.91.9 (2026-09-27)
+
+### Performance Improvements
+
+- **cache**: #7 batch L2NormKVCache update across B*H
+  ([#538](https://github.com/rajveer43/VeloxQuant-MLX/pull/538),
+  [`cfebd0e`](https://github.com/rajveer43/VeloxQuant-MLX/commit/cfebd0e292598035bd3b0e04023cd81bbca9990e))
+
+
 ## v0.91.8 (2026-09-26)
 
 ### Performance Improvements
