@@ -404,8 +404,13 @@ it buys maintenance time.
 
 ## Citation
 
-If you use VeloxQuant-MLX in your research, benchmarks, or applications, please cite
-the project using the DOI below.
+VeloxQuant-MLX is MIT-licensed — using it in code, products, or infrastructure
+does not require permission or a paper citation. If you redistribute a copy or
+a substantial portion of the source, keep the MIT copyright and permission
+notice, as the license requires. **For academic and research use**, citing the
+project beyond that is not required by the license but is genuinely
+appreciated: it helps surface the work, and it is the main signal a
+solo-maintained project like this has that it is useful to someone.
 
 ```bibtex
 @software{veloxquant_mlx,
@@ -419,7 +424,9 @@ the project using the DOI below.
 ```
 
 Per-method attributions and the full bibliography for all 43 adapted papers live in
-[CITATIONS.md](CITATIONS.md).
+[CITATIONS.md](CITATIONS.md). If your own contribution to this project is
+substantial enough that you'd want acknowledgement or co-authorship on a paper
+or writeup, see [GOVERNANCE.md's Authorship & Acknowledgement Policy](GOVERNANCE.md#authorship--acknowledgement-policy).
 
 ---
 
