@@ -544,6 +544,15 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.1 (2026-10-12)
+
+### Bug Fixes
+
+- **panel**: Reject cross-site requests, answer malformed input, stop orphaning the server
+  ([#790](https://github.com/rajveer43/VeloxQuant-MLX/pull/790),
+  [`0f24a51`](https://github.com/rajveer43/VeloxQuant-MLX/commit/0f24a512ce5de090ac2fd8d7e4926e92b30ae2f5))
+
+
 ## v0.94.0 (2026-10-10)
 
 ### Features
