@@ -544,6 +544,15 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.4 (2026-10-14)
+
+### Bug Fixes
+
+- **artifacts**: Saved .npy artifacts were created 0600 instead of honouring umask
+  ([#793](https://github.com/rajveer43/VeloxQuant-MLX/pull/793),
+  [`4f8a376`](https://github.com/rajveer43/VeloxQuant-MLX/commit/4f8a37604c871a794fe6ac74f76ff0a8e7b72e6a))
+
+
 ## v0.94.3 (2026-10-14)
 
 ### Bug Fixes
