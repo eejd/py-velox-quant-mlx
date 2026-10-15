@@ -544,6 +544,15 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.5 (2026-10-15)
+
+### Bug Fixes
+
+- **ratequant**: Isolate calibration prompts so they don't share a KV cache
+  ([#794](https://github.com/rajveer43/VeloxQuant-MLX/pull/794),
+  [`bfd6df6`](https://github.com/rajveer43/VeloxQuant-MLX/commit/bfd6df61d31f0d6ae0142d8eda801aae844def01))
+
+
 ## v0.94.4 (2026-10-14)
 
 ### Bug Fixes
