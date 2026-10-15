@@ -544,6 +544,23 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.6 (2026-10-15)
+
+### Bug Fixes
+
+- **core**: EncodedVector.memory_bytes mis-sized dtypes missing from its table
+  ([#797](https://github.com/rajveer43/VeloxQuant-MLX/pull/797),
+  [`101a75c`](https://github.com/rajveer43/VeloxQuant-MLX/commit/101a75c8abf43461a6e0a67a81c4ee7b5f9bccfb))
+
+- **integration**: Mistral template rejected an empty initial system message
+  ([#796](https://github.com/rajveer43/VeloxQuant-MLX/pull/796),
+  [`779fc81`](https://github.com/rajveer43/VeloxQuant-MLX/commit/779fc814ceccac9046476944b59608663d9c1492))
+
+- **math**: Lloyd-Max left dead centroids at the support edges for narrow PDFs
+  ([#795](https://github.com/rajveer43/VeloxQuant-MLX/pull/795),
+  [`b992c65`](https://github.com/rajveer43/VeloxQuant-MLX/commit/b992c6513d5327f5211083d0d8d294663858a517))
+
+
 ## v0.94.5 (2026-10-15)
 
 ### Bug Fixes
