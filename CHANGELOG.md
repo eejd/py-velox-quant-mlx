@@ -544,6 +544,71 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.10 (2026-10-16)
+
+### Bug Fixes
+
+- **cache**: AnchorKV crashed when the first call was a single token
+  ([#805](https://github.com/rajveer43/VeloxQuant-MLX/pull/805),
+  [`178bb14`](https://github.com/rajveer43/VeloxQuant-MLX/commit/178bb14b0d46acc8a3ffe1f9329f8198b5190869))
+
+- **cache**: ChunkKV returned float32 for bfloat16 input after the first call
+  ([#806](https://github.com/rajveer43/VeloxQuant-MLX/pull/806),
+  [`30315c9`](https://github.com/rajveer43/VeloxQuant-MLX/commit/30315c9ed0848b301ef44aae7ce69b5a7d17a6ec))
+
+- **cache**: PALU silently dropped batch rows beyond the first
+  ([#807](https://github.com/rajveer43/VeloxQuant-MLX/pull/807),
+  [`d369620`](https://github.com/rajveer43/VeloxQuant-MLX/commit/d3696200ede947c810a2dd0c895c09eb1f9a3752))
+
+- **codebooks**: Adaptive codebook observe() crashed on bfloat16 input
+  ([#808](https://github.com/rajveer43/VeloxQuant-MLX/pull/808),
+  [`3672b2a`](https://github.com/rajveer43/VeloxQuant-MLX/commit/3672b2a83b19c02a5a0eac98d75247637e241e13))
+
+- **integration**: Don't install the Mistral template on tokenizers with no chat template
+  ([#811](https://github.com/rajveer43/VeloxQuant-MLX/pull/811),
+  [`d21ccae`](https://github.com/rajveer43/VeloxQuant-MLX/commit/d21ccaecfe4a9f3365d3eabc6267e0a737647a83))
+
+- **math**: Lloyd-Max under-converged and mis-integrated cells at high bit widths
+  ([#802](https://github.com/rajveer43/VeloxQuant-MLX/pull/802),
+  [`fe5b4d8`](https://github.com/rajveer43/VeloxQuant-MLX/commit/fe5b4d81f959e0ae03b67fc233eb689ed22cb186))
+
+- **memory**: Failed allocate left a phantom active owner in the block pool
+  ([#812](https://github.com/rajveer43/VeloxQuant-MLX/pull/812),
+  [`cc3b1f7`](https://github.com/rajveer43/VeloxQuant-MLX/commit/cc3b1f76c2e29a98cf38cd7ecd338c8eb6502974))
+
+- **memory**: Odd n_blocks silently dropped a block when separate_kv is on
+  ([#813](https://github.com/rajveer43/VeloxQuant-MLX/pull/813),
+  [`a87c164`](https://github.com/rajveer43/VeloxQuant-MLX/commit/a87c164664428d48591dfee079ac59d40820a024))
+
+- **memory**: PoolBackedKVCache crashed on deepcopy (mlx_lm LRUPromptCache)
+  ([#803](https://github.com/rajveer43/VeloxQuant-MLX/pull/803),
+  [`d505e59`](https://github.com/rajveer43/VeloxQuant-MLX/commit/d505e59498b38ab95ae3a94f817b5047c58cb132))
+
+- **metal**: Qjl_encode segfaulted on an empty batch
+  ([#810](https://github.com/rajveer43/VeloxQuant-MLX/pull/810),
+  [`0308885`](https://github.com/rajveer43/VeloxQuant-MLX/commit/0308885c00d7545a0115d86a9adcfb47c16b724d))
+
+- **rabitq**: Fit/encode/search crashed on bfloat16 input
+  ([#809](https://github.com/rajveer43/VeloxQuant-MLX/pull/809),
+  [`fa79f0a`](https://github.com/rajveer43/VeloxQuant-MLX/commit/fa79f0ab6d8b051098eb6ca2aae3fbfd993a7380))
+
+- **spectral**: All-zero vectors decoded to non-zero output
+  ([#815](https://github.com/rajveer43/VeloxQuant-MLX/pull/815),
+  [`579441a`](https://github.com/rajveer43/VeloxQuant-MLX/commit/579441a633a34347d53b6a124de2b000e8a30a36))
+
+- **spectral**: Participation ratio and water-fill broke on small-scale data
+  ([#804](https://github.com/rajveer43/VeloxQuant-MLX/pull/804),
+  [`378fb39`](https://github.com/rajveer43/VeloxQuant-MLX/commit/378fb39976b0510c22ea1230e22d844926634df3))
+
+- **transfer**: Transfer_cache destroyed an in-memory mapper's weights
+  ([#816](https://github.com/rajveer43/VeloxQuant-MLX/pull/816),
+  [`0641f83`](https://github.com/rajveer43/VeloxQuant-MLX/commit/0641f83169ff36025a6c9972ae269f87f66a5a2b))
+
+- **weight**: All-zero weight rows dequantized to non-zero output
+  ([#814](https://github.com/rajveer43/VeloxQuant-MLX/pull/814),
+  [`624bf75`](https://github.com/rajveer43/VeloxQuant-MLX/commit/624bf7529300c134328899ebf9529e5f97401c27))
+
+
 ## v0.94.9 (2026-10-16)
 
 ### Bug Fixes
