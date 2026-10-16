@@ -544,6 +544,19 @@ window size via `adakv_obs_window` (default 32).
 
 <!-- version list -->
 
+## v0.94.7 (2026-10-16)
+
+### Bug Fixes
+
+- **planning**: Probe methods promoted into the ranking after a serve-tier drop
+  ([#799](https://github.com/rajveer43/VeloxQuant-MLX/pull/799),
+  [`4ed296e`](https://github.com/rajveer43/VeloxQuant-MLX/commit/4ed296e08cdf3b4b94d8e6ae7fefd4359d94305c))
+
+- **profiling**: Copy/deepcopy of a cache profiler raised RecursionError
+  ([#798](https://github.com/rajveer43/VeloxQuant-MLX/pull/798),
+  [`2fa42b3`](https://github.com/rajveer43/VeloxQuant-MLX/commit/2fa42b3d2539f41d14961b05720ed6b3bab1d8da))
+
+
 ## v0.94.6 (2026-10-15)
 
 ### Bug Fixes
